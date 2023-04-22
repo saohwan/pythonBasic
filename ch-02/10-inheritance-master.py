@@ -59,5 +59,26 @@ print(object.__name__)
 
 print(object.__repr__)
 
-
 print(int.mro())
+print(int.__init__(8.9))
+print(int(8.9))
+
+
+class A:
+    pass
+
+
+class B:
+    pass
+
+
+class C:
+    pass
+
+
+class D(A, B, C):
+    pass
+
+
+print(D.mro())
+
